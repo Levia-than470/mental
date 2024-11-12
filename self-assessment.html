@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mental Health Self-Assessment</title>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #f0f0f0; color: #333; }
+        header { background-color: #00796b; color: #fff; padding: 20px; text-align: center; }
+        nav a { margin: 0 15px; color: #fff; text-decoration: none; }
+        .assessment-container { max-width: 600px; margin: 20px auto; padding: 20px; background-color: #fff; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); }
+        h2 { color: #00796b; text-align: center; }
+        form { display: flex; flex-direction: column; gap: 15px; }
+        label { margin-bottom: 5px; }
+        input[type="radio"] { margin-right: 10px; }
+        button { padding: 10px; background-color: #00796b; color: #fff; border: none; border-radius: 5px; cursor: pointer; }
+        button:hover { background-color: #004d40; }
+        .message { text-align: center; margin-top: 20px; font-size: 1.2em; color: #00796b; }
+        footer { text-align: center; padding: 20px; background-color: #00796b; color: #fff; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Mental Health Self-Assessment</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="testimonials.html">Testimonials</a>
+            <a href="appointments.html">Book Appointment</a>
+            <a href="contact.html">Contact</a>
+            <a href="self-assessment.html">Self-Assessment</a>
+        </nav>
+    </header>
+
+    <div class="assessment-container">
+        <h2>How Are You Feeling Today?</h2>
+        <form id="assessmentForm">
+            <label>1. Do you often feel overwhelmed by your daily tasks?</label>
+            <input type="radio" name="q1" value="yes" required> Yes
+            <input type="radio" name="q1" value="no"> No
+
+            <label>2. Have you been sleeping well recently?</label>
+            <input type="radio" name="q2" value="yes" required> Yes
+            <input type="radio" name="q2" value="no"> No
+
+            <label>3. Do you often feel anxious or worried about the future?</label>
+            <input type="radio" name="q3" value="yes" required> Yes
+            <input type="radio" name="q3" value="no"> No
+
+            <label>4. Have you been able to enjoy activities that you usually find pleasurable?</label>
+            <input type="radio" name="q4" value="yes" required> Yes
+            <input type="radio" name="q4" value="no"> No
+
+            <label>5. Do you feel supported by your friends or family?</label>
+            <input type="radio" name="q5" value="yes" required> Yes
+            <input type="radio" name="q5" value="no"> No
+
+            <button type="submit">Submit</button>
+        </form>
+
+        <div id="message" class="message" style="display: none;">
+            <p>Thank you for completing the assessment. Remember, no matter how tough things may seem, you are strong and capable of overcoming any challenge. Take time to care for yourself, and know that you are not alone on this journey. You are valued, and brighter days are ahead. Keep moving forward!</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Therapy & Mental Wellness. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.getElementById('assessmentForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            document.getElementById('message').style.display = 'block';
+        });
+    </script>
+</body>
+</html>
+
