@@ -4,12 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Therapy & Mental Wellness</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #f0f0f0; color: #333; }
+        header { background-color: #004d40; color: #fff; padding: 10px; text-align: center; }
+        nav a { margin: 0 15px; color: #fff; text-decoration: none; }
+        .hero { text-align: center; padding: 50px; background: #00796b; color: #fff; }
+        .btn { padding: 10px 20px; background-color: #004d40; color: #fff; border: none; cursor: pointer; }
+        .btn:hover { background-color: #002d24; }
+        .services { display: flex; justify-content: center; gap: 20px; padding: 20px; }
+        .service-card { background-color: #fff; padding: 20px; border-radius: 10px; }
+        footer { text-align: center; padding: 20px; background-color: #004d40; color: #fff; }
+    </style>
 </head>
 <body>
     <header>
-        <img src="images/logo.png" alt="Site Logo" class="logo">
+        <h1>Therapy & Mental Wellness</h1>
         <nav>
             <a href="index.html">Home</a>
             <a href="about.html">About Us</a>
@@ -20,31 +29,21 @@
     </header>
 
     <section class="hero">
-        <video autoplay loop muted playsinline>
-            <source src="images/video.mp4" type="video/mp4">
-        </video>
-        <div class="hero-overlay">
-            <h1>Your Path to Mental Wellness Starts Here</h1>
-            <p>Providing compassionate therapy services for a healthier mind.</p>
-            <a href="appointments.html" class="btn">Book Your Session</a>
-        </div>
+        <h1>Welcome to Your Path to Wellness</h1>
+        <p>Your mental health is our priority. We offer personalized therapy and wellness programs.</p>
+        <button class="btn">Learn More</button>
     </section>
 
-    <main>
-        <section class="services">
-            <h2>Our Services</h2>
-            <div class="service-card">
-                <img src="images/therapy.jpg" alt="Therapy Session">
-                <h3>Individual Therapy</h3>
-                <p>Personalized one-on-one sessions with licensed therapists.</p>
-            </div>
-            <div class="service-card">
-                <img src="images/wellness.jpg" alt="Wellness Programs">
-                <h3>Wellness Programs</h3>
-                <p>Holistic programs designed to improve your mental health.</p>
-            </div>
-        </section>
-    </main>
+    <section class="services">
+        <div class="service-card">
+            <h3>Individual Therapy</h3>
+            <p>One-on-one sessions tailored to your needs.</p>
+        </div>
+        <div class="service-card">
+            <h3>Family Counseling</h3>
+            <p>Supportive counseling for families and couples.</p>
+        </div>
+    </section>
 
     <footer>
         <p>&copy; 2024 Therapy & Mental Wellness. All rights reserved.</p>
