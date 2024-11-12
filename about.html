@@ -4,10 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us</title>
-    <link rel="stylesheet" href="style.css">
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #f9f9f9; color: #333; }
+        header { background-color: #00796b; color: #fff; padding: 20px; text-align: center; }
+        nav a { margin: 0 15px; color: #fff; text-decoration: none; }
+        .about { padding: 20px; text-align: center; }
+        .creator-img { max-width: 200px; border-radius: 50%; }
+        footer { text-align: center; padding: 20px; background-color: #00796b; color: #fff; }
+    </style>
 </head>
 <body>
     <header>
+        <h1>About Us</h1>
         <nav>
             <a href="index.html">Home</a>
             <a href="about.html">About Us</a>
@@ -17,31 +25,14 @@
         </nav>
     </header>
 
-    <main>
-        <section class="about-creator">
-            <h2>Meet the Creator</h2>
-            <img src="images/creator.jpg" alt="Creator">
-            <p>I am [Your Name], a licensed therapist with a passion for helping individuals find peace and balance. My mission is to provide a safe space where you can explore your thoughts and feelings without judgment.</p>
-        </section>
-
-        <section class="mission">
-            <h2>Our Mission</h2>
-            <p>To provide compassionate, evidence-based therapy that supports mental wellness for individuals, families, and communities.</p>
-        </section>
-
-        <section class="values">
-            <h3>Our Values</h3>
-            <ul>
-                <li><strong>Empathy:</strong> We listen with understanding and care.</li>
-                <li><strong>Integrity:</strong> Honesty and confidentiality are at the core of our practice.</li>
-                <li><strong>Growth:</strong> We believe in the potential of every individual to thrive.</li>
-            </ul>
-        </section>
-    </main>
+    <section class="about">
+        <h2>Meet the Creator</h2>
+        <img src="images/creator.jpg" alt="Creator Image" class="creator-img">
+        <p>We provide compassionate and personalized therapy services. Our mission is to guide you on a journey towards a balanced and fulfilling life.</p>
+    </section>
 
     <footer>
         <p>&copy; 2024 Therapy & Mental Wellness. All rights reserved.</p>
     </footer>
 </body>
 </html>
-
